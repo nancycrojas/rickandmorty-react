@@ -14,10 +14,11 @@ export const Character = ({ character }) => {
   return (
     <SimpleGrid
       columns={2}
-      templateColumns="200px 1fr"
+      templateColumns={{ base: '200px', md: '200px 1fr', sm: '300px' }}
       bg="#202329"
       rounded="lg"
       color="white"
+      overflow="hidden"
     >
       <Image src={image} alt={name} roundedLeft="lg" />
       <VStack align="flex-start" p={2}>
